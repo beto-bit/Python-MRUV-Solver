@@ -15,7 +15,9 @@ def busc_VF(listaBo, listaNum):
     elif listaBo[3] == False:
         return (vo**2 + 2*a*x)**0.5
     elif listaBo[4] == False:
-        return vo + a*t        
+        return vo + a*t 
+    else:
+        return a*t/2 + x/t
 
 # Busqueda de VO
 def busc_VO(listaBo, listaNum):
@@ -33,6 +35,9 @@ def busc_VO(listaBo, listaNum):
         return (vf**2 - 2*a*x)**0.5
     elif listaBo[4] == False:
         return vf - a*t
+    else:
+        x/t - a*t/2
+
 
 # busqueda de aceleración
 def busc_A(listaBo, listaNum):
@@ -50,6 +55,8 @@ def busc_A(listaBo, listaNum):
         return ((vf**2)-(vo**2))/(2*x)
     elif listaBo[4] == False:
         return (vf - vo)/t
+    else:
+        2*(x - vo*t)/(t**2)
 
 # Busqueda de Tiempo
 def busc_T(listaBo, listaNum):
@@ -67,6 +74,8 @@ def busc_T(listaBo, listaNum):
         return 2*x/(vf + vo)
     elif listaBo[4] == False:
         return (vf - vo)/a
+    else:
+        (-vo + (vo**2 + 2*a*x)**0.5) / a
 
 # Buscando la posición
 def busc_X(listaBo, listaNum):
@@ -84,7 +93,8 @@ def busc_X(listaBo, listaNum):
         return t*(vf + vo)/2
     elif listaBo[3] == False:
         return ((vf)**2 - (vo)**2) /(2*a)
-
+    else:
+        vo*t + a*(t**2)/2
 
 
 # La función principal

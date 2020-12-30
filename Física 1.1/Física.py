@@ -61,7 +61,7 @@ if lista_bool[indice - 1] == True:
     print("\n¡Pero si ya tienes resuelto el problema! Revisa bien tus datos.")
 else:
     if elector.determinador(lista_bool) == False:
-        print("No es posible determinar una solució debido a que no hay suficientes datos.")
+        print("No es posible determinar una solución debido a que no hay suficientes datos.")
     else:
         k = 0
         while True:   # la parte que se encarga de meter valores

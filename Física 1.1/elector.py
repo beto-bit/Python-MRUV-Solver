@@ -1,6 +1,3 @@
-# Este es el programa que decide si es posible solucionar un problema y en caso sea cierto
-
-
 # Parte que determina si es resolvible - - - CREO QUE ES TODO
 def determinador(lista_b):
     x = 0
@@ -11,5 +8,3 @@ def determinador(lista_b):
         return True
     else:
         return False
-
-
