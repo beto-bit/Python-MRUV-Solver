@@ -72,6 +72,7 @@ for variable in lista_variables: # Pregunta por todas las variables
 
 #La maquina Resolviendo problemas (de hecho delega a otras partes del código a resolverlo) SI
 
+
 solvable = functions.scan(lista_variables) # Averiguamos si se puede resolver
 
 if solvable == False:
@@ -79,7 +80,7 @@ if solvable == False:
 
 else:
     res = demoman.burning_down_the_house(indice, lista_variables)
-    print(res)
+    print(f"\n\n===: El valor de la variable {indice} es {res} :===")
 
 
 

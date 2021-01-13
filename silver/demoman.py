@@ -62,34 +62,33 @@ def burning_down_the_house(indice, lista_variables):
     t = lista_variables[3].valor
     x = lista_variables[4].valor
 
-    # Falta variables jaja
-    lista_falta = []
+    # ¿Qué variable busco?
+    i = 0
+    while True:
+        try:
+            if lista_variables[i].corto == indice:
+                lista_variables.pop(i)
 
-    # Bucle para llenar listafalta
+            i += 1
+        except:
+            break
+
+
+    # ¿Qué variable me falta?
     for variable in lista_variables:
         if variable.estado == False:
-            lista_falta.append(variable)
-    
-    # XD?
-    if len(lista_falta) == 0:
-        if indice == "VF":
-            res = eval(obj_VF.VI)
-        elif indice == "VI":
-            res = eval(obj_VI.VF)
-        elif indice == "A":
-            res = eval(obj_A.VF)
-        elif indice == "T":
-            res = eval(obj_T.VF)
-        elif indice == "X":
-            res = eval(obj_X.VF)
+            if indice == "VF":
+                res = eval(obj_VF.kll_me(variable.corto))
+            elif indice == "VI":
+                res = eval(obj_VI.kll_me(variable.corto))
+            elif indice == "A":
+                res = eval(obj_A.kll_me(variable.corto))
+            elif indice == "T":
+                res = eval(obj_T.kll_me(variable.corto))
+            elif indice == "X":
+                res = eval(obj_X.kll_me(variable.corto))
 
-
-
-
-    # Final
     return res
-
-        
 
 
 

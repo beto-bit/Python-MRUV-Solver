@@ -30,6 +30,18 @@ class FormulHaze():
         self.A = lista_formulas["A"]
         self.T = lista_formulas["T"]
         self.X = lista_formulas["X"]
+    
+    def kll_me(self, var):
+        if var == "VF":
+            return self.VF
+        elif var == "VI":
+            return self.VI
+        elif var == "A":
+            return self.A
+        elif var == "T":
+            return self.T
+        elif var == "X":
+            return self.X
 
 
 class Osiris():
