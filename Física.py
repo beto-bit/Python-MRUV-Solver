@@ -78,8 +78,8 @@ if solvable == False:
     print("No es posible la resolucion de este problema.")    
 
 else:
-    pass #resuelve la wea
-
+    res = demoman.burning_down_the_house(indice, lista_variables)
+    print(res)
 
 
 

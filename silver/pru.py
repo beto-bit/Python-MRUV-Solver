@@ -61,8 +61,9 @@ obj_A = FormulHaze("A", a_formu)
 obj_T = FormulHaze("T", t_formu)
 obj_X = FormulHaze("X", x_formu)
 
-print(obj_A.VF)
+print(obj_A.VF)  # Contiene la formula para aceleracion y el .VF dice que es sin VF
 print(obj_VF.VF)
+print(obj_VF.A)
 print(obj_VF.X)
 
 

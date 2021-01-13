@@ -14,7 +14,7 @@ class Variable():
         self.corto = nombre_corto
 
         Variable.lista_var.append(self) #Creación automática de lista de variables 
-        Variable.lista_corto.append(self.nombre) # Creación de autom. de lista de nombres cortos
+        Variable.lista_corto.append(self.corto) # Creación de autom. de lista de nombres cortos
 
 
 class FormulHaze():
@@ -38,6 +38,9 @@ class Osiris():
     Le pasamos las fórmulas.
     Le pasamos el objeto de la variable.
     """ 
+    def __init__(self, variable, formula):
+        pass
+        
 
 
 
