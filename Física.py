@@ -80,68 +80,16 @@ if solvable == False:
 
 else:
     res = demoman.burning_down_the_house(indice, lista_variables)
-    print(f"\n\n===: El valor de la variable {indice} es {res} :===")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    print(    
+        f"""\n
+        ╔═══════════════════════════════════════════════════╗ 
+        ║                    RESULTADO                      ║
+        ╠═══════════════════════════════════════════════════╣
+        ║    El valor de la variable <{indice}> es: {res}   ║
+        ╚v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v╝/n
+        
+        
+        """)
 
 
 
