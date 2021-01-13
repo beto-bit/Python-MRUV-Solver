@@ -85,7 +85,7 @@ else:
         ╔═══════════════════════════════════════════════════╗ 
         ║                    RESULTADO                      ║
         ╠═══════════════════════════════════════════════════╣
-        ║    El valor de la variable <{indice}> es:{res}    ║
+        ║    El valor de la variable <{indice}> es: {res}   ║
         ╚v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v╝/n
         
         
